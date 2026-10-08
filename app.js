@@ -19,7 +19,19 @@ $('profileForm').onsubmit=async e=>{e.preventDefault();const p={firstName:$('fir
 $('newAttempt').onclick=async()=>{if(!confirm('¿Iniciar un nuevo intento? El anterior quedará conservado en el historial.'))return;await closeAttempt();await createAttempt();draw()};
 async function route(u){user=u;['setup','verify','profile','student'].forEach(x=>show(x,false));if(!u){show('setup',true);return}if(!allowed(u.email)){await signOut(auth);status('Correo no autorizado.');return}if(!u.emailVerified){show('verify',true);return}const p=await getDoc(doc(db,'profiles',u.uid));if(!p.exists()){show('profile',true);return}profile=p.data();await start()}
 onAuthStateChanged(auth,u=>route(u).catch(e=>{console.error(e);status('No se pudo iniciar: '+e.message);show('setup',true)}));
-async function start(){show('student',true);$('studentInfo').textContent=`${profile.firstName} ${profile.lastName} · ${profile.commission}`;let a=await getDoc(doc(db,'admins',user.uid));show('adminLink',a.exists());Q=await (await fetch('./questions.json')).json();sections=[...new Set(Q.map(q=>q.section))];const ref=query(collection(db,'users',user.uid,'attempts'),orderBy('startedAt','desc'));const snap=await getDocs(ref);const open=snap.docs.find(d=>d.data().status==='open');if(open){attemptId=open.id;answers={};let rows=await getDocs(collection(db,'users',user.uid,'attempts',attemptId,'answers'));rows.forEach(d=>answers[d.id]=d.data())}else await createAttempt();openedAt=Date.now();draw();}
+async function start(){show('student',true);$('studentInfo').textContent=`${profile.firstName} ${profile.lastName} · ${profile.commission}`;let isTeacher = false;
+
+try {
+  const adminDoc = await getDoc(doc(db, 'admins', user.uid));
+  isTeacher = adminDoc.exists();
+} catch (error) {
+  if (error.code !== 'permission-denied') {
+    console.error('Error al verificar permisos docentes:', error);
+    throw error;
+  }
+}
+
+show('adminLink', isTeacher);Q=await (await fetch('./questions.json')).json();sections=[...new Set(Q.map(q=>q.section))];const ref=query(collection(db,'users',user.uid,'attempts'),orderBy('startedAt','desc'));const snap=await getDocs(ref);const open=snap.docs.find(d=>d.data().status==='open');if(open){attemptId=open.id;answers={};let rows=await getDocs(collection(db,'users',user.uid,'attempts',attemptId,'answers'));rows.forEach(d=>answers[d.id]=d.data())}else await createAttempt();openedAt=Date.now();draw();}
 async function createAttempt(){let a=await addDoc(collection(db,'users',user.uid,'attempts'),{startedAt:serverTimestamp(),status:'open',commission:profile.commission,questionCount:Q.length});attemptId=a.id;answers={};await event('attempt_started',{questionId:-1});}
 async function closeAttempt(){if(attemptId){await updateDoc(doc(db,'users',user.uid,'attempts',attemptId),{status:'closed',closedAt:serverTimestamp()});await event('attempt_closed',{questionId:-1})}}
 async function event(type,data={}){if(!user||!attemptId)return;try{await addDoc(collection(db,'users',user.uid,'attempts',attemptId,'events'),{type,...data,at:serverTimestamp()})}catch(e){console.warn('Evento no guardado',e)}}
