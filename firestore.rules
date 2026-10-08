@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  function signed() {return request.auth != null;}
+  function institution() {return signed() && request.auth.token.email_verified == true && request.auth.token.email is string && request.auth.token.email.matches('(?i).*@DOMINIO-INSTITUCIONAL\\.edu\\.ar$');}
+  function isAdmin() {return institution() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));}
+  function mine(uid) {return institution() && request.auth.uid == uid;}
+  match /admins/{uid} {
+   allow get: if isAdmin() && request.auth.uid == uid;
+   allow list,create,update,delete: if false;
+  }
+  match /profiles/{uid} {
+   allow read: if mine(uid) || isAdmin();
+   allow create,update: if mine(uid) && request.resource.data.keys().hasOnly(['firstName','lastName','commission','email','updatedAt']) && request.resource.data.firstName is string && request.resource.data.firstName.size() <= 80 && request.resource.data.lastName is string && request.resource.data.lastName.size() <= 80 && request.resource.data.commission is string && request.resource.data.commission.size() <= 60 && request.resource.data.email == request.auth.token.email;
+   allow delete: if false;
+  }
+  match /users/{uid}/attempts/{attemptId} {
+   allow read: if mine(uid) || isAdmin();
+   allow create: if mine(uid) && request.resource.data.keys().hasOnly(['startedAt','status','commission','questionCount']) && request.resource.data.status == 'open' && request.resource.data.questionCount == 51 && request.resource.data.startedAt == request.time;
+   allow update: if mine(uid) && resource.data.status == 'open' && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','closedAt']) && request.resource.data.status == 'closed' && request.resource.data.closedAt == request.time;
+   allow delete: if false;
+   match /answers/{questionId} {
+    allow read: if mine(uid) || isAdmin();
+    allow create,update: if mine(uid) && get(/databases/$(database)/documents/users/$(uid)/attempts/$(attemptId)).data.status == 'open' && request.resource.data.questionId is int && request.resource.data.questionId >= 0 && request.resource.data.questionId < 51 && questionId == string(request.resource.data.questionId) && request.resource.data.keys().hasOnly(['questionId','section','type','choice','revision','text','review','updatedAt']) && request.resource.data.updatedAt == request.time && (!('text' in request.resource.data) || (request.resource.data.text is string && request.resource.data.text.size() <= 20000));
+    allow delete: if false;
+   }
+   match /events/{eventId} {
+    allow read: if mine(uid) || isAdmin();
+    allow create: if mine(uid) && request.resource.data.keys().hasOnly(['type','questionId','section','choice','correct','secondsOnPage','length','at']) && request.resource.data.type is string && request.resource.data.type.size() <= 50 && request.resource.data.questionId is int && request.resource.data.at == request.time;
+    allow update,delete: if false;
+   }
+  }
+ }
+}

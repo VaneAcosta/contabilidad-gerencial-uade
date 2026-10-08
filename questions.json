@@ -1,0 +1,460 @@
+[
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "La información destinada a la gerencia puede incluir proyecciones y datos no monetarios.",
+    "answer": true,
+    "explain": "La contabilidad gerencial combina información histórica y prospectiva, financiera y no financiera.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "El criterio de lo devengado reconoce ingresos únicamente cuando se cobran.",
+    "answer": false,
+    "explain": "El devengamiento reconoce el hecho económico en el período que corresponde, independientemente del cobro.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "La comparabilidad permite examinar cambios entre períodos o entidades.",
+    "answer": true,
+    "explain": "Se requiere consistencia de criterios y revelar cambios relevantes.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "Un incremento del activo corriente garantiza que la liquidez corriente mejore.",
+    "answer": false,
+    "explain": "La liquidez corriente depende también de la evolución del pasivo corriente.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "Una rentabilidad del patrimonio neto superior a la del activo puede asociarse con apalancamiento favorable.",
+    "answer": true,
+    "explain": "La relación requiere revisar el efecto de financiación y la consistencia de las bases de cálculo.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "Un EBITDA positivo implica necesariamente un flujo neto de efectivo positivo.",
+    "answer": false,
+    "explain": "El EBITDA no considera cambios de capital de trabajo, inversiones ni otros flujos.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "El análisis horizontal permite identificar variaciones absolutas y relativas.",
+    "answer": true,
+    "explain": "Compara importes de distintos períodos usando una base definida.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "En el punto de equilibrio, la contribución marginal total cubre los costos fijos.",
+    "answer": true,
+    "explain": "En ese nivel el resultado operativo es cero.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "El costo hundido es relevante para decidir entre alternativas futuras.",
+    "answer": false,
+    "explain": "Un costo hundido no cambia por la decisión y, en general, no es diferencial.",
+    "options": []
+  },
+  {
+    "section": "1. Verdadero o falso",
+    "type": "tf",
+    "prompt": "La utilidad contable y la disponibilidad de fondos representan exactamente lo mismo.",
+    "answer": false,
+    "explain": "El resultado responde al devengado; la caja, a cobros y pagos.",
+    "options": []
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "¿Quién utiliza principalmente un presupuesto operativo para decidir?",
+    "answer": 1,
+    "explain": "Es una herramienta central de planificación y control interno.",
+    "options": [
+      "Un proveedor",
+      "La gerencia de operaciones",
+      "Un acreedor externo",
+      "Un accionista minoritario"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "Una venta devengada en marzo y cobrada en mayo integra el resultado de:",
+    "answer": 1,
+    "explain": "La venta se reconoce al cumplirse las condiciones de devengamiento.",
+    "options": [
+      "Mayo",
+      "Marzo",
+      "Ambos meses por mitades",
+      "El mes del depósito"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "En el análisis vertical del estado de resultados, la base más habitual es:",
+    "answer": 1,
+    "explain": "Cada rubro se expresa como porcentaje de ventas.",
+    "options": [
+      "Activo total",
+      "Ventas netas",
+      "Patrimonio neto",
+      "Pasivo corriente"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "¿Qué expresa Pasivo total / Activo total?",
+    "answer": 1,
+    "explain": "Es una medida de endeudamiento estructural.",
+    "options": [
+      "Margen operativo",
+      "Proporción del activo financiada por terceros",
+      "Rotación de inventarios",
+      "Rentabilidad del PN"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "La RPN se obtiene habitualmente relacionando:",
+    "answer": 1,
+    "explain": "Mide el rendimiento atribuible al capital propio.",
+    "options": [
+      "EBIT / activo promedio",
+      "Resultado neto / PN promedio",
+      "Ventas / activo corriente",
+      "Pasivo / PN"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "Para calcular EBITDA a partir de EBIT se debe:",
+    "answer": 1,
+    "explain": "El EBITDA excluye depreciaciones y amortizaciones del resultado operativo.",
+    "options": [
+      "Restar intereses",
+      "Sumar depreciaciones y amortizaciones operativas",
+      "Sumar impuesto a las ganancias",
+      "Restar costo variable"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "¿Cuál es una decisión típica basada en contribución marginal?",
+    "answer": 1,
+    "explain": "Se comparan ingresos y costos diferenciales, además de restricciones relevantes.",
+    "options": [
+      "Definir el método de amortización legal",
+      "Evaluar un pedido adicional con capacidad ociosa",
+      "Determinar la reserva legal",
+      "Registrar una factura"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "Si el precio unitario aumenta y los demás factores permanecen constantes, el punto de equilibrio en unidades:",
+    "answer": 1,
+    "explain": "Aumenta la contribución marginal unitaria y se necesitan menos unidades.",
+    "options": [
+      "Aumenta",
+      "Disminuye",
+      "No cambia",
+      "Es negativo"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "¿Cuál de los siguientes es un presupuesto financiero?",
+    "answer": 0,
+    "explain": "Proyecta entradas, salidas y saldos de fondos.",
+    "options": [
+      "Flujo de fondos proyectado",
+      "Presupuesto de unidades vendidas",
+      "Plan de producción",
+      "Presupuesto de horas de mano de obra"
+    ]
+  },
+  {
+    "section": "2. Opción múltiple",
+    "type": "mc",
+    "prompt": "Una variación presupuestaria desfavorable debe:",
+    "answer": 1,
+    "explain": "El control presupuestario busca explicar desvíos y orientar decisiones.",
+    "options": [
+      "Considerarse siempre fraude",
+      "Investigarse en función de causas y contexto",
+      "Eliminarse del informe",
+      "Ignorarse si hubo ventas"
+    ]
+  },
+  {
+    "section": "3. Desarrollo conceptual",
+    "type": "text",
+    "prompt": "Diferenciá información para usuarios internos y externos. Proponé una decisión para cada uno.",
+    "answer": "Internos: gerentes, decisiones de precios, producción y presupuesto. Externos: bancos o inversores, decisiones de crédito o inversión.",
+    "explain": "La finalidad condiciona periodicidad, detalle y formato.",
+    "options": []
+  },
+  {
+    "section": "3. Desarrollo conceptual",
+    "type": "text",
+    "prompt": "Explicá la diferencia entre liquidez disponible y liquidez necesaria, incorporando plazos de cobro y pago.",
+    "answer": "La disponible surge de recursos corrientes realizables; la necesaria depende de los compromisos y su vencimiento. Deben compararse composición y sincronización de flujos.",
+    "explain": "Un índice aislado no revela descalces temporales.",
+    "options": []
+  },
+  {
+    "section": "3. Desarrollo conceptual",
+    "type": "text",
+    "prompt": "Describí qué aportan el análisis vertical y el horizontal al diagnóstico.",
+    "answer": "El vertical analiza composición relativa; el horizontal muestra evolución absoluta y porcentual entre períodos.",
+    "explain": "Se complementan para distinguir estructura y tendencia.",
+    "options": []
+  },
+  {
+    "section": "3. Desarrollo conceptual",
+    "type": "text",
+    "prompt": "Relacioná RIT, RPN y apalancamiento financiero. ¿Qué precaución tomarías al interpretarlos?",
+    "answer": "RIT relaciona resultado operativo antes de intereses e impuestos con activo promedio; RPN relaciona resultado neto con PN promedio. El apalancamiento requiere analizar financiamiento, costo de deuda y efecto fiscal.",
+    "explain": "No atribuir toda diferencia de tasas exclusivamente a deuda sin revisar bases y efecto fiscal.",
+    "options": []
+  },
+  {
+    "section": "3. Desarrollo conceptual",
+    "type": "text",
+    "prompt": "Compará costeo marginal y por absorción en el tratamiento de los costos fijos de producción.",
+    "answer": "En absorción, los costos fijos fabriles forman parte del costo del producto; en marginal, se tratan como costos del período para el análisis de contribución.",
+    "explain": "Pueden diferir los resultados cuando cambia el inventario.",
+    "options": []
+  },
+  {
+    "section": "3. Desarrollo conceptual",
+    "type": "text",
+    "prompt": "Distinguí presupuesto económico, financiero y de inversiones.",
+    "answer": "Económico: ingresos, costos y resultados devengados; financiero: cobros, pagos y saldos; inversiones: desembolsos y activos de largo plazo.",
+    "explain": "Los tres deben articularse.",
+    "options": []
+  },
+  {
+    "section": "4. Casos breves",
+    "type": "text",
+    "prompt": "Una empresa aumenta sus ventas 15 %, pero sus cuentas por cobrar crecen 45 %. ¿Qué riesgo investigarías?",
+    "answer": "Deterioro de cobranzas, plazos de crédito y concentración de clientes.",
+    "explain": "El crecimiento comercial no equivale necesariamente a generación de caja.",
+    "options": []
+  },
+  {
+    "section": "4. Casos breves",
+    "type": "text",
+    "prompt": "Un banco recibe estados contables completos, pero después de decidir un crédito. ¿Qué cualidad se vio afectada?",
+    "answer": "Oportunidad.",
+    "explain": "La información tardía pierde utilidad decisoria.",
+    "options": []
+  },
+  {
+    "section": "4. Casos breves",
+    "type": "text",
+    "prompt": "Una fábrica considera cerrar una línea. La depreciación de una máquina ya comprada no cambia entre alternativas. ¿Es un costo diferencial?",
+    "answer": "No; en la decisión planteada no cambia entre alternativas.",
+    "explain": "Evaluar costos e ingresos futuros evitables o incrementales.",
+    "options": []
+  },
+  {
+    "section": "4. Casos breves",
+    "type": "text",
+    "prompt": "Una empresa tiene resultado neto positivo y flujo operativo negativo. Indicá dos causas posibles.",
+    "answer": "Aumento de cuentas por cobrar y/o inventarios; pago de pasivos operativos.",
+    "explain": "Diferenciar devengado de movimientos de fondos.",
+    "options": []
+  },
+  {
+    "section": "4. Casos breves",
+    "type": "text",
+    "prompt": "El presupuesto de ventas se cumple, pero los gastos comerciales exceden 20 % lo previsto. ¿Cómo abordarías el desvío?",
+    "answer": "Separar efecto volumen, precios y eficiencia; verificar supuestos, gastos no recurrentes y responsables.",
+    "explain": "El desvío requiere explicación, no solo calificación.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Calculá la variación porcentual de las ventas entre 20X5 y 20X6.",
+    "answer": "16,67 %",
+    "explain": "(2.100 − 1.800) / 1.800 × 100.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Calculá el análisis vertical del costo de ventas en 20X6.",
+    "answer": "60 %",
+    "explain": "1.260 / 2.100 × 100.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Calculá la liquidez corriente en 20X6.",
+    "answer": "1,75",
+    "explain": "700 / 400.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Calculá el endeudamiento Pasivo / Activo en 20X6.",
+    "answer": "50 %",
+    "explain": "(400 + 400) / 1.600 × 100.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Calculá RIT en 20X6 usando activo promedio.",
+    "answer": "22,67 %",
+    "explain": "340 / [(1.400 + 1.600)/2] × 100.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Calculá RPN en 20X6 usando PN promedio.",
+    "answer": "24,27 %",
+    "explain": "182 / [(700 + 800)/2] × 100.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Calculá EBITDA de 20X6.",
+    "answer": "430 millones",
+    "explain": "340 + 90.",
+    "options": []
+  },
+  {
+    "section": "5. Caso integrador: Nexo Digital S.A.",
+    "type": "text",
+    "prompt": "Redactá un diagnóstico de cinco líneas que relacione rentabilidad, liquidez y endeudamiento.",
+    "answer": "Las ventas aumentan 16,67 %, la liquidez corriente es 1,75 y el pasivo financia 50 % del activo. RIT 22,67 % y RPN 24,27 %. Conviene investigar calidad del activo corriente, costo de deuda y evolución de márgenes.",
+    "explain": "Un diagnóstico integra ratios y contexto, no enumera números.",
+    "options": []
+  },
+  {
+    "section": "6. Comparación de empresas",
+    "type": "text",
+    "prompt": "Según el cuadro comparativo, ¿cuál muestra mayor liquidez corriente? ¿Eso basta para elegirla?",
+    "answer": "B tiene mayor liquidez corriente (2,10); no basta: revisar composición, vencimientos, rentabilidad y riesgos.",
+    "explain": "Un ratio no define por sí solo la situación integral.",
+    "options": []
+  },
+  {
+    "section": "6. Comparación de empresas",
+    "type": "text",
+    "prompt": "Con los datos anteriores, ¿qué empresa exhibe mayor proporción de financiación de terceros?",
+    "answer": "B: 65 %.",
+    "explain": "El endeudamiento se interpreta según la definición utilizada.",
+    "options": []
+  },
+  {
+    "section": "6. Comparación de empresas",
+    "type": "text",
+    "prompt": "¿Qué preguntas harías antes de concluir que el apalancamiento de A es favorable?",
+    "answer": "Verificar fórmula, costo efectivo de la deuda, resultado financiero, impuesto y bases promedio.",
+    "explain": "Comparar tasas exige consistencia metodológica.",
+    "options": []
+  },
+  {
+    "section": "6. Comparación de empresas",
+    "type": "text",
+    "prompt": "Según las variaciones de ventas y EBIT del cuadro, ¿cuál mejora más su margen operativo?",
+    "answer": "B.",
+    "explain": "En B el EBIT crece más rápido que las ventas; en A ocurre lo contrario.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "Calculá la contribución marginal unitaria.",
+    "answer": "$12.000",
+    "explain": "30.000 − 18.000.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "Calculá la razón de contribución marginal.",
+    "answer": "40 %",
+    "explain": "12.000 / 30.000 × 100.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "Calculá el punto de equilibrio en unidades.",
+    "answer": "1.200 unidades",
+    "explain": "14.400.000 / 12.000.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "Calculá el punto de equilibrio en pesos.",
+    "answer": "$36.000.000",
+    "explain": "1.200 × 30.000.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "Calculá el margen de seguridad en unidades y porcentaje.",
+    "answer": "300 unidades; 20 %",
+    "explain": "1.500 − 1.200 = 300; 300 / 1.500 × 100.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "Calculá el resultado operativo esperado.",
+    "answer": "$3.600.000",
+    "explain": "1.500 × 12.000 − 14.400.000.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "¿Qué pasa con el punto de equilibrio si aumentan los costos fijos sin cambiar precio ni costo variable?",
+    "answer": "Aumenta.",
+    "explain": "Se requieren más unidades para cubrir costos fijos mayores.",
+    "options": []
+  },
+  {
+    "section": "7. Punto de equilibrio",
+    "type": "text",
+    "prompt": "Si se ofrece un pedido adicional de 100 unidades a $24.000 cada una, con capacidad ociosa y sin costos fijos incrementales, ¿cuál sería su contribución incremental?",
+    "answer": "$600.000",
+    "explain": "(24.000 − 18.000) × 100. La aceptación final depende de otras restricciones comerciales y operativas.",
+    "options": []
+  }
+]
